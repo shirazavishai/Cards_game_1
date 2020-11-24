@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context=".ScoreActivity"
+    >
+
+    <Button
+        android:id="@+id/score_BTN_close"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/Linear_layout"
+        android:text="X"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/Linear_layout"
+        android:layout_height="match_parent"
+        android:layout_width="340dp"
+        android:orientation="vertical"
+        android:gravity="center|top"
+        tools:context=".ScoreActivity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rectangle_winner"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="score table"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/score_LBL_winner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="The winner is"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"
+            />
+
+        <ImageView
+            android:id="@+id/score_IMG_winner"
+            android:layout_width="240dp"
+            android:layout_height="175dp"
+            android:background="@drawable/panda_lion"
+            android:contentDescription="image" />
+
+
+        <TextView
+            android:id="@+id/score_LBL_winnerScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="score:"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-medium"
+            />
+
+        <TextView
+            android:id="@+id/score_LBL_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="second place:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/score_LBL_secondScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="score:"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
